@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>★☆ 가현의 홈페이지에 오신 것을 환영합니다 ☆★</title>
+<style>
+  body {
+    background-color: #000000;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+      radial-gradient(2px 2px at 60px 70px, #fff, transparent),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+      radial-gradient(2px 2px at 160px 20px, #fff, transparent),
+      radial-gradient(1px 1px at 200px 100px, #fff, transparent),
+      radial-gradient(1px 1px at 240px 50px, #fff, transparent),
+      radial-gradient(2px 2px at 280px 90px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 300px 150px;
+    color: #00ff00;
+    font-family: "Comic Sans MS", "Courier New", monospace;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 4px dashed #ff00ff;
+    background-color: #0a0a2a;
+    padding: 20px;
+    box-shadow: 0 0 25px #00ffff;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 0 #000;
+    animation: rainbow 4s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+  .blink {
+    animation: blink 1s step-start infinite;
+    color: #ffff00;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  hr.rainbow {
+    height: 6px;
+    border: none;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    margin: 20px 0;
+  }
+
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #000;
+    border: 2px solid #00ff00;
+    padding: 6px 0;
+    margin: 15px 0;
+  }
+
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 12s linear infinite;
+    color: #00ffff;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .badge {
+    display: inline-block;
+    background: #111;
+    border: 1px solid #00ff00;
+    padding: 8px 12px;
+    margin: 6px;
+    font-size: 0.85em;
+    text-align: center;
+  }
+
+  .badges {
+    text-align: center;
+  }
+
+  ul.hobbies {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.hobbies li {
+    padding: 6px;
+    margin: 4px 0;
+    background-color: #1a1a3a;
+    border-left: 5px solid #ff00ff;
+  }
+
+  .guestbook {
+    border: 2px inset #888;
+    background-color: #000033;
+    padding: 12px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+
+  .counter {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .odometer {
+    display: inline-block;
+    background: #000;
+    color: #ff0000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+    padding: 8px 14px;
+    border: 3px solid #666;
+    border-radius: 4px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.75em;
+    color: #888;
+    margin-top: 25px;
+  }
+
+  a { color: #00ffff; }
+
+  .construction {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffcc00;
+    border: 2px dotted #ffcc00;
+    padding: 8px;
+    margin: 15px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>★☆ 가현의 홈페이지 ☆★</h1>
+  <p style="text-align:center;">Since 2026 · Best Viewed at 800x600 · Netscape Navigator 권장</p>
+
+  <hr class="rainbow">
+
+  <div class="marquee"><span>환영합니다! 제 작고 소중한 홈페이지에 놀러오신 것을 환영합니다 ~ 방명록도 남겨주세요! ~ 새로고침 할 때마다 카운터가 올라갑니다 ~</span></div>
+
+  <p>
+    안녕하세요, 저는 <b class="blink">가현</b>입니다.<br>
+    Claude Code로 만든 저의 첫 개인 홈페이지에 오신 걸 환영해요.
+    아래는 제가 요즘 좋아하는 것들이에요.
+  </p>
+
+  <h2>💾 좋아하는 것 3가지</h2>
+  <ul class="hobbies">
+    <li>☕ 커피 한 잔의 여유</li>
+    <li>🎧 플레이리스트 만들기</li>
+    <li>🌿 주말 산책</li>
+  </ul>
+
+  <hr class="rainbow">
+
+  <h2>📌 한 줄 소개</h2>
+  <p style="border:1px dashed #00ff00; padding:10px;">
+    "오늘도 배우고, 오늘도 만들어봅니다."
+  </p>
+
+  <div class="construction">
+    🚧 이 페이지는 계속 공사 중입니다 (Under Construction) 🚧
+  </div>
+
+  <div class="counter">
+    <p>당신은 <b>제 홈페이지의</b></p>
+    <div class="odometer" id="odometer">000128</div>
+    <p style="font-size:0.8em;">번째 방문자입니다! (새로고침 시 랜덤으로 증가하는 레트로 감성 카운터입니다 😉)</p>
+  </div>
+
+  <div class="badges">
+    <div class="badge">🖱️ Made with<br>Claude Code</div>
+    <div class="badge">🌐 Best Viewed<br>800x600</div>
+    <div class="badge">💚 100%<br>Hand-crafted</div>
+  </div>
+
+  <hr class="rainbow">
+
+  <h2>📖 방명록</h2>
+  <div class="guestbook">
+    <p>→ 익명: 홈페이지 예쁘네요! 별밤 배경 좋아요 ✨</p>
+    <p>→ 익명: 방문자 카운터 넘 귀여워요 ㅎㅎ</p>
+    <p>→ (여기에 방명록을 남겨보세요 - 준비중)</p>
+  </div>
+
+  <footer>
+    © 2026 가현's Homepage. All rights reserved (아마도).<br>
+    본 페이지는 개인 연습용으로 제작되었습니다.
+  </footer>
+
+</div>
+
+<script>
+  // 레트로 감성 방문자 카운터: 새로고침마다 랜덤하게 살짝 증가
+  var el = document.getElementById('odometer');
+  var base = 128;
+  var extra = Math.floor(Math.random() * 40);
+  var count = base + extra;
+  el.textContent = String(count).padStart(6, '0');
+</script>
+
+</body>
+</html>
